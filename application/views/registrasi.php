@@ -54,7 +54,7 @@ $this->load->view('layout/head');
                 <div class="tab-content">
                     <div class="tab-pane active" id="tab_1">
                         <div class="register-box-body">
-                            <p class="login-box-msg">Register a new membership</p>
+                            <p class="login-box-msg">Register a new student</p>
 
                             <form action="<?php echo base_url('registrasi/regis'); ?>" method="post">
                                 <div class="form-group has-feedback">

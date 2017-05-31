@@ -14,7 +14,7 @@
 <?php
 $this->load->view('layout/head');
 ?>
-
+<title>Admin Dashboard</title>
 <!--tambahkan custom css disini-->
 <!-- iCheck -->
 <link href="<?php echo base_url('assets/ext/AdminLTE-2.0.5/plugins/iCheck/flat/blue.css') ?>" rel="stylesheet" type="text/css" />
