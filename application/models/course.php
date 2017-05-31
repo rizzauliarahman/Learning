@@ -35,6 +35,7 @@ class Course extends CI_Model
     function get_course($where){
         $query = $this->db->get_where('course', $where);
         $row = $query->row();
+        return $row;
     }
 
 }

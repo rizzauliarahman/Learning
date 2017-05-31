@@ -38,6 +38,14 @@
         {
             $query = $this->db->get_where($table, $where);
             $row = $query->row();
+            return $row;
+        }
+
+        function get_course($id)
+        {
+            $query = $this->db->get_where('course', 'Instructor_ID = '.$id);
+            $records = $query->result();
+            return $records;
         }
 
     }
