@@ -162,12 +162,6 @@ $this->load->view('layout/head');
 </div>
 
 
-
-
-
-
-
-
 <?php
 $this->load->view('layout/js');
 ?>

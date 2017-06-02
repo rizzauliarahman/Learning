@@ -43,8 +43,8 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i> Data Pelajaran</a></li>
-                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o">Data Task</i> </a></li>
-                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o">Data Jawaban</i> </a></li>
+                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i> Data Task</a></li>
+                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i> Data Jawaban</a></li>
                 </ul>
             </li>
     </section>

@@ -40,4 +40,8 @@
             $row = $query->row();
         }
 
+        function get_all($table){
+            return $this->db->get($table);
+        }
+
     }
