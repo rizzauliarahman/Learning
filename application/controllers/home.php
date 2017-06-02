@@ -18,6 +18,10 @@ class Home extends CI_Controller
     }
 
     function index(){
+        $this->load->view('home2');
+    }
+
+    function index2(){
         $this->load->view('home');
     }
 }

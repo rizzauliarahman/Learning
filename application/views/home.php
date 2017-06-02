@@ -41,9 +41,29 @@ $this->load->view('layout/head');
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
-                <li>
-                    <a href="<?php base_url('login') ?>">Login</a>
-                </li>
+                <?php
+                    if ($this->session->userdata("nama") != ""){
+                       ?><li>
+                        <a href="#">
+                        <?php
+                       echo $this->session->userdata("nama");
+                       ?> </a></li>
+                        <li> <?php
+                            echo "<a href="; echo base_url('login/logout'); echo ">Logout</a>"?>
+
+                        </li>
+                        <?php
+                    }
+                    else{
+                        ?>
+                        <li><?php
+                        echo "<a href="; echo base_url('login'); echo ">Login</a>"; ?>
+                        </li>
+                        <?php
+                    }
+                 ?>
+                    <!--<a href="<?php echo base_url('login') ?>"> Login</a>-->
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -56,10 +76,13 @@ $this->load->view('layout/head');
 <a name="about"></a>
 <div class="intro-header">
     <div class="container">
-
+        <div class="row">
+            /br /br /br /br /br
+        </div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
+                    /br
                     <h1>Landing Page</h1>
                     <h3><b>E</b>-learning</h3>
                     <hr class="intro-divider">
@@ -67,6 +90,14 @@ $this->load->view('layout/head');
 
                     </ul>
                 </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <h2>
+                    Hello World !!
+                </h2>
             </div>
         </div>
 
@@ -75,6 +106,7 @@ $this->load->view('layout/head');
 
 </div>
 
+<div class="wrapper">
 
 <!-- jQuery -->
 <script src="<?php echo base_url('assets/ext/js/jquery.min.js')?>"></script>
@@ -82,10 +114,9 @@ $this->load->view('layout/head');
 <!-- Bootstrap Core JavaScript -->
 <script src="<?php echo base_url('assets/ext/bootstrap/js/bootstrap.min.js')?>"></script>
 
-</body>
+
 
 <?php
 $this->load->view('layout/foot');
 ?>
 
-</html>
