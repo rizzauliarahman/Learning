@@ -48,4 +48,8 @@
             return $records;
         }
 
+        function get_all($table){
+            return $this->db->get($table);
+        }
+
     }

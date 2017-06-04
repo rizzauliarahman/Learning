@@ -1,10 +1,18 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: User
+ * Date: 02/06/2017
+ * Time: 10:47
+ */?>
+
 </head>
-<body class="skin-blue">
+<body class="skin-green">
     <!-- Site wrapper -->
     <div class="wrapper">
 
         <header class="main-header">
-            <a href="<?php echo base_url('home')?>" class="logo"><b>E</b>-learning</a>
+            <a href="#" class="logo"><b>E</b>-learning</a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
                 <!-- Sidebar toggle button-->
@@ -20,7 +28,7 @@
                         <li class="dropdown messages-menu">
 
                             <!-- NOTIFIKASI DSB OFF DLU
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="fa fa-envelope-o"></i>
                                 <span class="label label-success">4</span>
                             </a>
@@ -37,8 +45,8 @@
                                                     <img src="<?php //echo base_url('assets/ext/AdminLTE-2.0.5/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image"/>
                                                 </div>
                                                 <h4>
-                                                    Support Team
-                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+Support Team
+<small><i class="fa fa-clock-o"></i> 5 mins</small>
                                                 </h4>
                                                 <p>Why not buy a new awesome theme?</p>
                                             </a>
@@ -48,7 +56,7 @@
                                 </li>
                                 <li class="footer"><a href="#">See All Messages</a></li>
                             </ul>
-                            -->
+-->
 
                             <!--
 
@@ -69,7 +77,7 @@
                                     <li>
                                         <a href="#">
                                             <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                                        </a>
+</a>
                                     </li>
                                 </ul>
                             </li>
@@ -93,8 +101,8 @@
                             <!--
                                         <a href="#">
                                             <h3>
-                                                Design some buttons
-                                                <small class="pull-right">20%</small>
+Design some buttons
+<small class="pull-right">20%</small>
                                             </h3>
                                             <div class="progress xs">
                                                 <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
@@ -119,32 +127,32 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <img src="<?php echo base_url('assets/ext/AdminLTE-2.0.5/dist/img/user2-160x160.jpg') ?>" class="user-image" alt="User Image"/>
                                 <span class="hidden-xs"><?php echo $this->session->userdata("nama"); ?></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <!-- User image -->
-                                <li class="user-header">
-                                    <img src="<?php echo base_url('assets/ext/AdminLTE-2.0.5/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image" />
-                                    <p>
-                                        <?php echo $this->session->userdata("nama"); ?>
-                                        <small>Administrator</small>
-                                    </p>
-                                </li>
-                                <!-- Menu Body -->
+</a>
+<ul class="dropdown-menu">
+    <!-- User image -->
+    <li class="user-header">
+        <img src="<?php echo base_url('assets/ext/AdminLTE-2.0.5/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image" />
+        <p>
+            <?php echo $this->session->userdata("nama"); ?>
+            <small>Administrator</small>
+        </p>
+    </li>
+    <!-- Menu Body -->
 
-                                <!-- Menu Footer-->
-                                <li class="user-footer">
-                                    <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
-                                    </div>
-                                    <div class="pull-right">
-                                        <a href="<?php echo base_url('login/logout') ?>" class="btn btn-default btn-flat">Sign out</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <!-- Menu Footer-->
+    <li class="user-footer">
+        <div class="pull-left">
+            <a href="#" class="btn btn-default btn-flat">Profile</a>
+        </div>
+        <div class="pull-right">
+            <a href="<?php echo base_url('login/logout') ?>" class="btn btn-default btn-flat">Sign out</a>
+        </div>
+    </li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</header>
 
-        <!-- =============================================== -->
+<!-- =============================================== -->

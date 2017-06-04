@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: User
+ * Date: 02/06/2017
+ * Time: 10:55
+ */
+?>
+
 <!-- Left side column. contains the sidebar -->
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
@@ -8,7 +17,7 @@
                 <img src="<?php echo base_url('assets/ext/AdminLTE-2.0.5/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-                <p><a href="<?php echo base_url('admin')?>"> <?php echo $this->session->userdata("nama"); ?></a></p>
+                <p><?php echo $this->session->userdata("nama"); ?></p>
 
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
@@ -26,33 +35,16 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-user"></i> <span>Manage Student</span> <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="#tambah-student" data-toggle="tab"><i class="fa fa-circle-o"></i>Add Student</a></li>
-                    <li><a href="#view-student" data-toggle="tab"><i class="fa fa-circle-o"></i>View Student</a></li>
-                </ul>
-            </li>
-            <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-user"></i> <span>Manage Instructor</span> <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                    <li><a href="#tambah-instructor" data-toggle="tab"><i class="fa fa-circle-o"></i>Add Instructor</a></li>
-                    <li><a href="#view-instructor" data-toggle="tab"><i class="fa fa-circle-o"></i>View Instructor</a></li>
-                </ul>
-            </li>
+
 
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-book"></i> <span>Pelajaran</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#tambah-pelajaran" data-toggle="tab"><i class="fa fa-circle-o"></i> Data Pelajaran</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Data Task</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Data Jawaban</a></li>
+                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i> Data Pelajaran</a></li>
+                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i> Data Task</a></li>
+                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i> Data Jawaban</a></li>
                 </ul>
             </li>
     </section>

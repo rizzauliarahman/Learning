@@ -63,4 +63,22 @@ class Registrasi extends CI_Controller
             redirect('registrasi/instructor');
         }
     }
+    
+    function reg_student_admin(){
+        $data = array(
+            'Name' => $this->input->post('nama'),
+            'username' => $this->input->post('username'),
+            //'email' => $this->input->post('email'),
+            'password' => $this->input->post('password')
+        );
+
+        if ($this->user->insert_user('student',$data))
+        {
+            redirect('admin');
+        }
+        else
+        {
+            redirect('registrasi/index');
+        }
+    }
 }
