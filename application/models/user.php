@@ -34,7 +34,7 @@
             $this->db->update($table, $data);
         }
 
-        function get_student($table, $where)
+        function get_user($table, $where)
         {
             $query = $this->db->get_where($table, $where);
             $row = $query->row();

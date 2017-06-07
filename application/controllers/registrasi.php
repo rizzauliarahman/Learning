@@ -29,14 +29,13 @@ class Registrasi extends CI_Controller
             //'email' => $this->input->post('email'),
             'password' => $this->input->post('password')
         );
-        
-        if ($this->user->insert_user('student',$data))
-        {
-            redirect('login');
-        }
-        else
-        {
-            redirect('registrasi/index');
+
+        if ($this->cek_username()) {
+            if ($this->user->insert_user('student', $data)) {
+                redirect('login');
+            } else {
+                redirect('registrasi/index');
+            }
         }
     }
 
@@ -54,17 +53,16 @@ class Registrasi extends CI_Controller
             'Work_Exp' => $this->input->post('exp')
         );
 
-        if ($this->user->insert_user('instructor',$data))
-        {
-            redirect('login');
-        }
-        else
-        {
-            redirect('registrasi/instructor');
+        if ($this->cek_username()) {
+            if ($this->user->insert_user('instructor', $data)) {
+                redirect('login');
+            } else {
+                redirect('registrasi/instructor');
+            }
         }
     }
     
-    function reg_student_admin(){
+    function regis_admin(){
         $data = array(
             'Name' => $this->input->post('nama'),
             'Username' => $this->input->post('username'),
@@ -72,13 +70,27 @@ class Registrasi extends CI_Controller
             'Password' => $this->input->post('password')
         );
 
-        if ($this->user->insert_user('student',$data))
-        {
-            redirect('admin');
-        }
-        else
-        {
-            redirect('registrasi/index');
+        if ($this->cek_username()) {
+            if ($this->user->insert_user('admin', $data)) {
+                redirect('admin');
+            } else {
+                redirect('registrasi/index');
+            }
         }
     }
+
+    function cek_username(){
+        $where = array('Username' => $this->input->post('username'));
+
+        $cek_student = $this->user->get_user('student', $where);
+        $cek_instructor = $this->user->get_user('instructor', $where);
+        $cek_admin = $this->user->get_user('admin', $where);
+
+        if ((!isset($cek_student)) and (!isset($cek_admin)) and (!isset($cek_instructor))){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
