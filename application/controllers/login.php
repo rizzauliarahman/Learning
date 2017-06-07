@@ -25,7 +25,7 @@
         function login(){
             $username = $this->input->post('username');
             $password = $this->input->post('password');
-            $where = array('username' => $username,'password' => $password );
+            $where = array('Username' => $username,'Password' => $password );
             if($this->user->cek_login("admin",$where)->num_rows() > 0){
 
                 $data_session = array(

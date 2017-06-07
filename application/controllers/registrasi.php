@@ -67,9 +67,9 @@ class Registrasi extends CI_Controller
     function reg_student_admin(){
         $data = array(
             'Name' => $this->input->post('nama'),
-            'username' => $this->input->post('username'),
+            'Username' => $this->input->post('username'),
             //'email' => $this->input->post('email'),
-            'password' => $this->input->post('password')
+            'Password' => $this->input->post('password')
         );
 
         if ($this->user->insert_user('student',$data))
