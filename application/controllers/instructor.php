@@ -17,7 +17,9 @@ class Instructor extends CI_Controller
         parent::__construct();
     }
     
-    function index(){
+    function index()
+    {
         $this->load->view('instructor');
     }
+
 }

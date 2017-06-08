@@ -34,10 +34,18 @@
             $this->db->update($table, $data);
         }
 
-        function get_student($table, $where)
+        function get_user($table, $where)
         {
             $query = $this->db->get_where($table, $where);
             $row = $query->row();
+            return $row;
+        }
+
+        function get_course($id)
+        {
+            $query = $this->db->get_where('course', 'Instructor_ID = '.$id);
+            $records = $query->result();
+            return $records;
         }
 
         function get_all($table){
