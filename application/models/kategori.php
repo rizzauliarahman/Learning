@@ -38,4 +38,8 @@ class Kategori extends CI_Model
         return $row;
     }
 
+    function get_all_kategori(){
+        return $this->db->get('kategori');
+    }
+
 }
