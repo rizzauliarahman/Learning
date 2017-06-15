@@ -1,0 +1,65 @@
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+
+.section-title {
+    max-width: 98%;
+    margin: 8px auto;
+    padding: 1px;
+    text-align: center; }
+.section-title h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #2ca5b9; }
+.section-title .divider {
+    position: relative;
+    border-bottom: 2px solid #777;
+    margin-bottom: 2px;
+    margin-top: 2px; }

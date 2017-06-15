@@ -241,11 +241,12 @@ a:hover, a:focus {
    ========================================================================== */
 
 .navbar {
-    border: 0px solid rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
     background: #70cbce;
     margin: auto;
-    min-height: 60px;
+    min-height: 50px;
     padding-top: 8px;
+    padding-bottom: 10px;
     position: fixed;
     transition: top 0.4s ease 0s;
 }
@@ -280,7 +281,7 @@ a:hover, a:focus {
 }
 
 .logo img {
-    margin-top: 6px;
+    margin-top: 10px;
 }
 
 
@@ -289,10 +290,10 @@ a:hover, a:focus {
    Main styles
    ========================================================================== */
 header {
-    background: #000 no-repeat center center;
+    background: url(../img/bg-header.jpg) no-repeat center center;
     width: 100%;
-    padding: 70px 10px 50px 10px;
-    height: 30vh;
+    padding: 20px 10px 50px 10px;
+    height: 20%;
     overflow: hidden;
     background-size: cover;
     -webkit-background-size: cover;

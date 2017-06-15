@@ -8,27 +8,6 @@
  */
 ?>
 
-
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <title>E-Learning</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <meta property="og:title" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/font-awesome.min.css')?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/animate.css')?>">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-
     <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/bootstrap.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/main2.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/kategori.css')?>">
@@ -57,12 +36,12 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about" class="scroll">About Us</a>&nbsp;</li>
+                <li>  </li>
                 <li>
                     <?php
                     if ($this->session->userdata("nama") != "") {
                     ?>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">| <?php echo $this->session->userdata("nama"); ?></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <?php echo $this->session->userdata("nama"); ?></a>
                 </li>
                 <li><a href="login/logout" class="btn btn-default"><font color="#70cbce">logout</font></a>
 
@@ -157,20 +136,20 @@
 
             <div class="row">
                 <div class="section-title">
-                    <h6 class="black" align="left">
-                        Recent
-                    </h6>
-                    <div class="divider"></div>
+                <h6 class="black" align="left">
+                    Recent
+                </h6>
+                <div class="divider"></div>
                 </div>
                 <div class="col-sm-4 col-lg-4 col-md-4">
 
                     <div class="thumbnail">
                         <img height="320px" width="150px" src="https://cdn-images-1.medium.com/max/600/1*bqt8t5vPveFWPWc_1FZaRA.jpeg" alt="">
                         <div class="caption">
-                            <h4 class="pull-right">$24.99</h4>
+                            <h4 class="pull-right">Rp 0</h4>
                             <h4><a href="#">First Product</a>
                             </h4>
-                            <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         <div class="ratings">
                             <p class="pull-right">15 reviews</p>
@@ -189,7 +168,7 @@
                     <div class="thumbnail">
                         <img height="320px" width="150px" src="https://cdn-images-1.medium.com/max/600/1*bqt8t5vPveFWPWc_1FZaRA.jpeg" alt="">
                         <div class="caption">
-                            <h4 class="pull-right">$64.99</h4>
+                            <h4 class="pull-right">Rp 10.000</h4>
                             <h4><a href="#">Second Product</a>
                             </h4>
                             <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -211,7 +190,7 @@
                     <div class="thumbnail">
                         <img height="320px" width="150px" src="https://cdn-images-1.medium.com/max/600/1*bqt8t5vPveFWPWc_1FZaRA.jpeg" alt="">
                         <div class="caption">
-                            <h4 class="pull-right">$74.99</h4>
+                            <h4 class="pull-right">Rp 5.000</h4>
                             <h4><a href="#">Third Product</a>
                             </h4>
                             <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -233,7 +212,7 @@
                     <div class="thumbnail">
                         <img height="320px" width="150px" src="https://cdn-images-1.medium.com/max/600/1*bqt8t5vPveFWPWc_1FZaRA.jpeg" alt="">
                         <div class="caption">
-                            <h4 class="pull-right">$84.99</h4>
+                            <h4 class="pull-right">Rp 1.000</h4>
                             <h4><a href="#">Fourth Product</a>
                             </h4>
                             <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -255,7 +234,7 @@
                     <div class="thumbnail">
                         <img height="320px" width="150px" src="https://cdn-images-1.medium.com/max/600/1*bqt8t5vPveFWPWc_1FZaRA.jpeg" alt="">
                         <div class="caption">
-                            <h4 class="pull-right">$94.99</h4>
+                            <h4 class="pull-right">Rp 500</h4>
                             <h4><a href="#">Fifth Product</a>
                             </h4>
                             <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -282,32 +261,3 @@
     </div>
 
 </div>
-
-<footer>
-    <div class="container">
-
-        <div class="row">
-            <div class="col-sm-8 margin-20">
-                <ul class="list-inline social">
-                    <li>Connect with us on</li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                </ul>
-            </div>
-
-            <div class="col-sm-4 text-right">
-                <p><small>Copyright &copy; 2017. All rights reserved. <br>
-                        Created by <a href="#about" class="scroll">dev</a></small></p>
-            </div>
-        </div>
-
-    </div>
-</footer>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="<?php echo base_url('assets/ext/js/jquery-1.11.0.min.js')?>"><\/script>')</script>
-<script src="<?php echo base_url('assets/ext/js/wow.min.js')?>"></script>
-<script src="<?php echo base_url('assets/ext/js/bootstrap.min.js')?>"></script>
-<script src="<?php echo base_url('assets/ext/js/main.js')?>"></script>
-

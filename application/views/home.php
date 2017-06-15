@@ -18,6 +18,25 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 
+
+<?php
+    if ($this->session->userdata("nama") != ""){
+        $this->load->view('kategori2');
+        echo ""
+        ?>
+<!-- INI setelah login-->
+
+
+<!-- End setelah login -->
+        <?php
+        ;
+    }
+    else {
+        echo ""
+
+        ?>
+
+<!-- INI sebelum login-->
     <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/bootstrap.min.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/main.css')?>">
 
@@ -63,85 +82,6 @@
         </div><!--/.navbar-collapse -->
     </div>
 </div>
-<?php
-    if ($this->session->userdata("nama") != ""){
-        echo ""
-        ?>
-<!-- INI setelah login-->
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <a href="index.html"><font size="6%" color="#f8f8ff"><b>E-Learning</b></font></a>
-                    </div>
-                    <div class="col-xs-6 signin text-right navbar-nav">
-
-                        <?php
-                        if ($this->session->userdata("nama") != "") {
-                            ?>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <?php echo $this->session->userdata("nama"); ?></a>
-                            <a href="<?php echo base_url('login/logout') ?>" class="btn btn-primary">logout</a>
-
-                            <?php
-                        }
-
-                        else {
-                            ?>
-                            <a href="<?php echo base_url('login') ?>">Sign in</a>
-                            <?php
-                        }
-                        ?>
-                    </div>
-                </div>
-
-                <div class="row header-info">
-                    <div class="col-sm-10 col-sm-offset-1 text-left">
-                        <h2 class="wow fadeIn"><u>Kategori</u></h2>
-
-
-                        <div class="row">
-                            <div class="col-md-1">
-                                <div class="row">
-                                    <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="0.7s">
-                                        <a href="#" class="btn btn-secondary btn-lg">Kategori 1</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row pad-xs">
-                            <div class="col-md-1">
-                                <div class="row">
-                                    <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="0.7s">
-                                        <a href="#" class="btn btn-secondary btn-lg">Kategori 2</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-1">
-                                <div class="row">
-                                    <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="0.7s">
-                                        <a href="#" class="btn btn-secondary btn-lg">Kategori 2</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </header>
-
-<!-- End setelah login -->
-        <?php
-        ;
-    }
-    else {
-        echo ""
-
-        ?>
-
-<!-- INI sebelum login-->
         <header>
             <div class="container">
                 <div class="row">
