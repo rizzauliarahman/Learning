@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/bootstrap.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/main2.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/kategori.css')?>">
+    <script src="<?php echo base_url('assets/ext/js/wow.min.js')?>"></script>
 
     <script src="<?php echo base_url('assets/ext/js/modernizr-2.7.1.js')?>"></script>
 
@@ -31,10 +32,6 @@
         </div>
 
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-
-
-            </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>  </li>
                 <li>
@@ -64,7 +61,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-right">
-                <a href="#"><h2><b>Kategori </b></h2></a>
+                <a href="#"><h2><b>Some Text </b></h2></a>
                 <h4>Lorem Ipsum Dolor Sit Amet</h4>
                 <div class="col-sm-offset-8 col-sm-4 ">
                     <form class="form" role="search" method="get" >
@@ -136,12 +133,13 @@
 
             <div class="row">
                 <div class="section-title">
-                <h6 class="black" align="left">
-                    Recent
-                </h6>
-                <div class="divider"></div>
+                    <h6 class="black" align="left">
+                        Recent
+                    </h6>
+                    <div class="divider"></div>
                 </div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
+
+                <div class="col-sm-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
 
                     <div class="thumbnail">
                         <img height="320px" width="150px" src="https://cdn-images-1.medium.com/max/600/1*bqt8t5vPveFWPWc_1FZaRA.jpeg" alt="">
@@ -164,7 +162,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="col-sm-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="thumbnail">
                         <img height="320px" width="150px" src="https://cdn-images-1.medium.com/max/600/1*bqt8t5vPveFWPWc_1FZaRA.jpeg" alt="">
                         <div class="caption">
@@ -186,7 +184,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="col-sm-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="thumbnail">
                         <img height="320px" width="150px" src="https://cdn-images-1.medium.com/max/600/1*bqt8t5vPveFWPWc_1FZaRA.jpeg" alt="">
                         <div class="caption">
@@ -208,7 +206,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="col-sm-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="thumbnail">
                         <img height="320px" width="150px" src="https://cdn-images-1.medium.com/max/600/1*bqt8t5vPveFWPWc_1FZaRA.jpeg" alt="">
                         <div class="caption">
@@ -230,8 +228,8 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                    <div class="thumbnail">
+                <div class="col-sm-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="thumbnail" >
                         <img height="320px" width="150px" src="https://cdn-images-1.medium.com/max/600/1*bqt8t5vPveFWPWc_1FZaRA.jpeg" alt="">
                         <div class="caption">
                             <h4 class="pull-right">Rp 500</h4>
@@ -261,3 +259,4 @@
     </div>
 
 </div>
+
