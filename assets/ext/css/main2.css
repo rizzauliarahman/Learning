@@ -53,16 +53,16 @@ h3 {
 p {
     font-size: 17px;
     line-height: 22px;
-    color: #929496;
-    font-weight: 400;
+    color: #231f20;
+    font-weight: 500;
 }
 
 h6 {
-    font-size: 40px;
-    line-height: 40px;
-    etter-spacing: -0.5px;
+    font-size: 17px;
+    line-height: 25px;
+    etter-spacing: 1px;
     color: #000000;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 /*------------------Utilities---------------------*/
@@ -241,13 +241,13 @@ a:hover, a:focus {
    ========================================================================== */
 
 .navbar {
-    border: 0px solid rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
     background: #70cbce;
     margin: auto;
-    min-height: 60px;
-    padding-top: 8px;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: fixed;
-    top: -60px;
     transition: top 0.4s ease 0s;
 }
 
@@ -281,7 +281,7 @@ a:hover, a:focus {
 }
 
 .logo img {
-    margin-top: 6px;
+    margin-top: 10px;
 }
 
 
@@ -292,13 +292,13 @@ a:hover, a:focus {
 header {
     background: url(../img/bg-header.jpg) no-repeat center center;
     width: 100%;
-    padding: 20px 10px 60px 10px;
-    height: 100vh;
+    padding: 20px 10px 50px 10px;
+    height: 20%;
     overflow: hidden;
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
 }
 
 .header-info {
