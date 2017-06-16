@@ -20,9 +20,12 @@ class Admin extends CI_Controller
     }
 
     function index(){
-        $this->load->helper('url');
-        $this->load->view('admin');
-        
+        if ($this->session->userdata("nama") != ""){
+            $this->load->view('admin');
+        }else{
+            redirect('home');
+        }
+
     }
 
     function get_all_user($table){
@@ -59,7 +62,8 @@ class Admin extends CI_Controller
 
     function delete_kategori($id){
         $where = array('kategori_id' => $id);
-        
+
+        $this->kategori->delete_kategori($where);
     }
-    
+
 }
