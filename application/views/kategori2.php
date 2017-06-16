@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="logo" href="index.html"><font size="5%" color="#f8f8ff"><b>E-Learning</b></font></a>
+            <a class="logo" href="#"><font size="5%" color="#f8f8ff"><b>E-Learning</b></font></a>
         </div>
 
         <div class="navbar-collapse collapse">
@@ -40,7 +40,7 @@
                     ?>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <?php echo $this->session->userdata("nama"); ?></a>
                 </li>
-                <li><a href="login/logout" class="btn btn-default"><font color="#70cbce">logout</font></a>
+                <li><a href="<?php echo base_url('login/logout') ?>" class="btn btn-default"><font color="#70cbce">logout</font></a>
 
                     <?php
                     }

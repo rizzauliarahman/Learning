@@ -31,6 +31,7 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/bootstrap.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/main2.css')?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/ext/css/kategori.css')?>">
 
     <script src="<?php echo base_url('assets/ext/js/modernizr-2.7.1.js')?>"></script>
 
@@ -47,18 +48,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="logo" href="index.html"><font size="5%" color="#f8f8ff"><b>E-Learning</b></font></a>
+            <a class="logo" href="#"><font size="5%" color="#f8f8ff"><b>E-Learning</b></font></a>
         </div>
+
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about" class="scroll">About Us</a>&nbsp;</li>
+                <li>  </li>
                 <li>
                     <?php
                     if ($this->session->userdata("nama") != "") {
                     ?>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">| <?php echo $this->session->userdata("nama"); ?></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <?php echo $this->session->userdata("nama"); ?></a>
                 </li>
-                <li><a href="login/logout" class="btn btn-default"><font color="#70cbce">logout</font></a>
+                <li><a href="<?php echo base_url('login/logout') ?>" class="btn btn-default"><font color="#70cbce">logout</font></a>
 
                     <?php
                     }
@@ -71,7 +73,7 @@
                     ?>
                 </li>
             </ul>
-        </div><!--/.navbar-collapse -->
+        </div>
     </div>
 </div>
 
@@ -87,7 +89,7 @@
 
 </header>
 
-<section id="invite" class="pad-sm light-gray-bg">
+<section id="invite" class="light-gray-bg">
     <div class="row">
         <div class="continer-fluid">
             <div class="row-fluid">
@@ -103,6 +105,13 @@
                 </div>
                 <div class="col-sm-7">
                     <section>
+                        <div class="row">
+                            <div class="col-sm-offset-2 col-sm-8 pad-xs">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/7g6ruRV_pUA"></iframe>
+                                </div>
+                            </div>
+                        </div>
                         <p align="justify">
                             Lorem ipsum dolor sit amet, iisque quaeque eos eu, cu vis quod indoctum. In eum quaerendum
                             deterruisset, partem vidisse at per. Te mea zril vocibus postulant. Ignota putant officiis mel

@@ -55,7 +55,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="logo" href="index.html"><font size="5%" color="#f8f8ff"><b>E-Learning</b></font></a>
+            <a class="logo" href="#"><font size="5%" color="#f8f8ff"><b>E-Learning</b></font></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -86,7 +86,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-6">
-                        <a href="index.html"><font size="6%" color="#f8f8ff"><b>E-Learning</b></font></a>
+                        <a href="#"><font size="6%" color="#f8f8ff"><b>E-Learning</b></font></a>
                     </div>
                     <div class="col-xs-6 signin text-right navbar-nav">
                         <a href="#about" class="scroll">About Us</a>&nbsp;
