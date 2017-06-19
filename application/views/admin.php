@@ -34,47 +34,49 @@ $this->load->view('layout/topbar');
 $this->load->view('layout/sidebar');
 ?>
 
-<!-- Content Header (Page header) -->
 <!-- Main content -->
-<div class="nav-tabs-custom">
-    <div class="tab-content">
-        <div class="tab-pane active" id="">
-            <?php
-            $this->load->view('section/sec-admin');
-            ?>
-        </div>
-        
-        <div class="tab-pane" id="tambah-student">
-            <?php
-            $this->load->view('section/sec-tambah-student');
-            ?>
-        </div>
-        
-        <div class="tab-pane" id="view-student">
-            <?php
-            $this->load->view('section/sec-view-student');
-            ?>
-        </div>
-        
-        <div class="tab-pane" id="view-instructor">
-            <?php
-            $this->load->view('section/sec-view-instructor');
-            ?>
-        </div>
-        
-        <div class="tab-pane" id="tambah-instructor">
-            <?php
-            $this->load->view('section/sec-tambah-instructor');
-            ?>
-        </div>
+<section class="content">
+    <div class="nav-tabs-custom">
+        <div class="tab-content">
+            <div class="tab-pane active" id="">
+                <?php
+                $this->load->view('section/sec-admin');
+                ?>
+            </div>
 
-        <div class="tab-pane" id="tambah-pelajaran">
-            <?php
-            $this->load->view('section/sec-tambah-pelajaran');
-            ?>
+            <div class="tab-pane" id="tambah-student">
+                <?php
+                $this->load->view('section/sec-tambah-student');
+                ?>
+            </div>
+
+            <div class="tab-pane" id="view-student">
+                <?php
+                $this->load->view('section/sec-view-student');
+                ?>
+            </div>
+
+            <div class="tab-pane" id="view-instructor">
+                <?php
+                $this->load->view('section/sec-view-instructor');
+                ?>
+            </div>
+
+            <div class="tab-pane" id="tambah-instructor">
+                <?php
+                $this->load->view('section/sec-tambah-instructor');
+                ?>
+            </div>
+
+            <div class="tab-pane" id="tambah-pelajaran">
+                <?php
+                $this->load->view('section/sec-tambah-pelajaran');
+                ?>
+            </div>
         </div>
     </div>
-</div>
+</section>
+
 <?php
 $this->load->view('layout/js');
 ?>

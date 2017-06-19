@@ -40,12 +40,8 @@
                     <i class="fa fa-book"></i> <span>Pelajaran</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-
                     <li><a href="#history-student" data-toggle="tab"><i class="fa fa-circle-o"></i>History</a></li>
                     <li><a href="#task-student" data-toggle="tab"><i class="fa fa-circle-o"></i>Task</a></li>
-=======
-                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i>Task</a></li>
-                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i>History</a></li>
 
 <!--
                     Bagian ini di komen dulu, student kayanya gaperlu data jawaban?
@@ -59,12 +55,9 @@
                     <i class="fa fa-gears"></i> <span>Settings</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i>Account</a></li>
-                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i>Preferences</a></li>
+                    <li><a href="#account-student" data-toggle="tab"><i class="fa fa-circle-o"></i>Account</a></li>
                 </ul>
             </li>
-
-
     </section>
     <!-- /.sidebar -->
 </aside>
