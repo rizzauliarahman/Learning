@@ -38,18 +38,6 @@
                             <input type="text" class="form-control" maxlength="250" placeholder="Alamat" value="Jalan La La Land 20">
                         </div>
                     </div>
-                    <div class="form-group has-feedback">
-                        <label for="birthday" class="col-lg-2 control-label">Tanggal lahir</label>
-                        <div class="col-lg-10">
-                            <input type="date" class="form-control" placeholder="YYYY-MM-DD" value="1996-03-13">
-                        </div>
-                    </div>
-                    <div class="form-group has-feedback">
-                        <label for="work_exp" class="col-lg-2 control-label">Work experience</label>
-                        <div class="col-lg-10">
-                            <textarea class="form-control" rows="10" placeholder="Add/remove your work experience here"></textarea>
-                        </div>
-                    </div>
                     <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-10">
                             <button type="submit" class="btn btn-primary btn-flat">Save</button>
