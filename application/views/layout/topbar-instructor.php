@@ -6,7 +6,6 @@
  * Time: 10:47
  */?>
 
-</head>
 <body class="skin-green">
     <!-- Site wrapper -->
     <div class="wrapper">
@@ -127,32 +126,35 @@ Design some buttons
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <img src="<?php echo base_url('assets/ext/AdminLTE-2.0.5/dist/img/user2-160x160.jpg') ?>" class="user-image" alt="User Image"/>
                                 <span class="hidden-xs"><?php echo $this->session->userdata("nama"); ?></span>
-</a>
-<ul class="dropdown-menu">
-    <!-- User image -->
-    <li class="user-header">
-        <img src="<?php echo base_url('assets/ext/AdminLTE-2.0.5/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image" />
-        <p>
-            <?php echo $this->session->userdata("nama"); ?>
-            <small>Administrator</small>
-        </p>
-    </li>
-    <!-- Menu Body -->
+                            </a>
 
-    <!-- Menu Footer-->
-    <li class="user-footer">
-        <div class="pull-left">
-            <a href="#" class="btn btn-default btn-flat">Profile</a>
-        </div>
-        <div class="pull-right">
-            <a href="<?php echo base_url('login/logout') ?>" class="btn btn-default btn-flat">Sign out</a>
-        </div>
-    </li>
-</ul>
-</li>
-</ul>
-</div>
-</nav>
-</header>
+                    <ul class="dropdown-menu">
+                        <!-- User image -->
+                        <li class="user-header">
+                            <img src="<?php echo base_url('assets/ext/AdminLTE-2.0.5/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image" />
+                            <p>
+                                <?php echo $this->session->userdata("nama"); ?>
+                                <small>Administrator</small>
+                            </p>
+                        </li>
+                        <!-- Menu Body -->
+
+                        <!-- Menu Footer-->
+                        <li class="user-footer">
+                            <div class="pull-left">
+                                <a href="#" class="btn btn-default btn-flat">Profile</a>
+                            </div>
+                            <div class="pull-right">
+                                <a href="<?php echo base_url('login/logout') ?>" class="btn btn-default btn-flat">Sign out</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
 
 <!-- =============================================== -->

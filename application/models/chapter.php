@@ -16,7 +16,13 @@ class Chapter extends CI_Model
 
     function insert_chapter($data)
     {
-        $this->db->insert('chapter', $data);
+        if ($this->db->insert('chapter', $data))
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     function delete_chapter($where)

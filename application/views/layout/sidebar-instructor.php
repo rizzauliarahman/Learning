@@ -35,16 +35,22 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-
-
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-book"></i> <span>Pelajaran</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i> Data Pelajaran</a></li>
-                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i> Data Task</a></li>
-                    <li><a href="<?php echo site_url('#') ?>"><i class="fa fa-circle-o"></i> Data Jawaban</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Data Pelajaran</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Data Task</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Data Jawaban</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-gears"></i> <span>Settings</span> <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="#account-settings" data-toggle="tab"><i class="fa fa-circle-o"></i>Account</a></li>
                 </ul>
             </li>
     </section>

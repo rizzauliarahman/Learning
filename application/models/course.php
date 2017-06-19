@@ -19,7 +19,14 @@ class Course extends CI_Model
     }
 
     function insert_course($data){
-        $this->db->insert('course', $data);
+        if ($this->db->insert('course', $data))
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
+
     }
 
     function delete_course($where){

@@ -2,11 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: User
- * Date: 02/06/2017
- * Time: 12:58
- */
-?>
+ * Date: 29/05/2017
+ * Time: 14:06
+ */?>
 
+<!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
         Dashboard
@@ -18,6 +18,7 @@
     </ol>
 </section>
 
+<!-- Main content -->
 <section class="content">
     <!-- Small boxes (Stat box) -->
     <div class="row">
@@ -25,13 +26,11 @@
             <!-- small box -->
             <div class="small-box bg-aqua">
                 <div class="inner">
-                    <h3>150</h3>
-                    <p>Pelajaran</p>
+                    <h3>10</h3>
+                    <p>Lesson Uploaded</p>
                 </div>
                 <div class="icon">
-                    <i class="ion briefcase">
-
-                    </i>
+                    <i class="ion ion-briefcase"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
@@ -41,8 +40,8 @@
             <!-- small box -->
             <div class="small-box bg-green">
                 <div class="inner">
-                    <h3>53<sup style="font-size: 20px">%</sup></h3>
-                    <p>Task Complete</p>
+                    <h3>10</h3> <!--<sup style="font-size: 20px">%</sup>-->
+                    <p>Task Uploaded</p>
                 </div>
                 <div class="icon">
                     <i class="ion ion-stats-bars"></i>
@@ -55,11 +54,11 @@
             <!-- small box -->
             <div class="small-box bg-yellow">
                 <div class="inner">
-                    <h3>44</h3>
-                    <p>Student Registrations</p>
+                    <h3>4,4</h3>
+                    <p>Rating</p>
                 </div>
                 <div class="icon">
-                    <i class="ion ion-person-add"></i>
+                    <i class="ion ion-star"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
@@ -69,11 +68,11 @@
             <!-- small box -->
             <div class="small-box bg-red">
                 <div class="inner">
-                    <h3>65</h3>
-                    <p>Unique Visitors</p>
+                    <h3>Rp 0,-</h3>
+                    <p>Balance</p>
                 </div>
                 <div class="icon">
-                    <i class="ion ion-pie-graph"></i>
+                    <i class="ion ion-cash"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
