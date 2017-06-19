@@ -49,10 +49,11 @@ $this->load->view('layout/topbar-home');
                         and the content will slightly differ than that of the normal layout.</p>
                 </div>
                 -->
+
                 <div class="row">
-                    <div class="jumbotron">
-                        <h1 class="jumbotron">Elearning</h1>
-                    </div>
+                    <?php
+                    $this->load->view('ext/banner');
+                    ?>
                 </div>
 
                 <div class="row">
@@ -97,9 +98,8 @@ $this->load->view('layout/foot');
 ?>
 <!-- ./wrapper -->
 
-<?php
-$this->load->view('layout/js');
-?>
+
 </body>
+
 </html>
 
