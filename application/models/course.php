@@ -38,4 +38,28 @@ class Course extends CI_Model
         return $row;
     }
 
+    function get_instructor_course($where){
+        $query = $this->db->get_where('course', $where);
+        $result = $query->result();
+        return $result;
+    }
+
+    function get_category_course($where){
+        $query = $this->db->get_where('kategori_course', $where);
+        $result = $query->result();
+        return $result;
+    }
+
+    function get_student_course($where){
+        $query = $this->db->get_where('student_course', $where);
+        $result = $query->result();
+        return $result;
+    }
+
+    function get_student_history($where){
+        $query = $this->db->get_where('student_history', $where);
+        $result = $query->result();
+        return $result;
+    }
+
 }

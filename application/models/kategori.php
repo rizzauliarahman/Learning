@@ -39,7 +39,9 @@ class Kategori extends CI_Model
     }
 
     function get_all_kategori(){
-        return $this->db->get('kategori');
+        $query = $this->db->get('kategori');
+        $result = $query->result();
+        return $result;
     }
 
 }
