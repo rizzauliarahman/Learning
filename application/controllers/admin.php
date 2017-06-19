@@ -66,4 +66,41 @@ class Admin extends CI_Controller
         $this->kategori->delete_kategori($where);
     }
 
+    function insert_pelajaran(){
+        $config['upload_path'] = FCPATH.'assets/files/';
+        $this->load->library('upload', $config);
+        $this->upload->initialize($config);
+
+        $data = array(
+            'Title' => $this->input->post('judul'),
+            'Price' => $this->input->post('harga'),
+            'Article' => $this->input->post('article')
+        );
+
+        $this->upload->do_upload('file');
+        echo $this->upload->display_errors();
+        $file = $this->upload->data();
+        $data_2 = array (
+            'Course_ID' => ' ',
+            'Link' => $file['full_path']
+        );
+
+        foreach ($file as $item => $value){
+            echo $item.' : '.$value.'<br>';
+        }
+
+            $result = $this->course->insert_course($data);
+           /* $result_2 = $this->chapter->insert_chapter($data_2);
+
+            if ($result && $result_2){
+                echo '<script language="javascript">alert("Artikel Berhasil Di Post")</script>';
+                echo '<script language="javascript">window.location =""'.base_url('admin') ; echo ' </script>';
+            }
+            else {
+                echo '<script language="javascript">alert("Error : Artikel Gagal Di Post")</script>';
+                echo '<script language="javascript">window.location =""'.base_url('admin') ; echo ' </script>';
+            }
+           */
+
+    }
 }
