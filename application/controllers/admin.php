@@ -62,7 +62,8 @@ class Admin extends CI_Controller
 
     function delete_kategori($id){
         $where = array('kategori_id' => $id);
-        
+
+        $this->kategori->delete_kategori($where);
     }
 
     function insert_pelajaran(){

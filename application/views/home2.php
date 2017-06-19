@@ -6,16 +6,17 @@
  * Time: 11:11
  */?>
 
-
+<html>
 <?php
 $this->load->view('layout/head');
 ?>
+<head>
 <title>E-Learning</title>
 </head>
 <?php
 $this->load->view('layout/topbar-home');
 ?>
-
+<body>
     <!-- Full Width Column -->
     <div class="content-wrapper">
         <div class="container">
