@@ -63,6 +63,11 @@ $this->load->view('layout/sidebar-student');
                 $this->load->view('section/sec-task-student');
                 ?>
             </div>
+            <div class="tab-pane" id="account-settings">
+                <?php
+                $this->load->view('section/sec-account-settings');
+                ?>
+            </div>
         </div>
     </div>
 </section>
