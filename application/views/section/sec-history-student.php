@@ -13,7 +13,7 @@
         <small> </small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="<?php echo base_url('home') ?>"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Dashboard</a></li>
         <li><a href="#">Pelajaran</a></li>
         <li class="active">History</li>
@@ -30,7 +30,7 @@
             <div class="box-body">
                 <ul class="todo-list"> <!--apa ya classnya selain to do list-->
                     <li>
-                        <span class="text"><a href="#">Cara Hidup Sehat</a></span>
+                        <span class="text"><a href="<?php echo base_url('pelajaran') ?>">Cara Hidup Sehat</a></span>
                         <!-- General tools such as edit or delete-->
                         <div class="tools">
                             <i class="fa fa-edit"></i>
@@ -38,7 +38,7 @@
                         </div>
                     </li>
                     <li>
-                        <span class="text"><a href="#">Jangan Buang Sampah Sembarangan</a></span>
+                        <span class="text"><a href="<?php echo base_url('pelajaran') ?>">Jangan Buang Sampah Sembarangan</a></span>
                         <!-- General tools such as edit or delete-->
                         <div class="tools">
                             <i class="fa fa-edit"></i>
@@ -46,7 +46,7 @@
                         </div>
                     </li>
                     <li>
-                        <span class="text"><a href="#">Grounding: Jalan-jalan Sore</a></span>
+                        <span class="text"><a href="<?php echo base_url('pelajaran') ?>">Grounding: Jalan-jalan Sore</a></span>
                         <!-- General tools such as edit or delete-->
                         <div class="tools">
                             <i class="fa fa-edit"></i>
@@ -54,7 +54,7 @@
                         </div>
                     </li>
                     <li>
-                        <span class="text"><a href="#">Biologi Kedokteran 1</a></span>
+                        <span class="text"><a href="<?php echo base_url('pelajaran') ?>">Biologi Kedokteran 1</a></span>
                         <!-- General tools such as edit or delete-->
                         <div class="tools">
                             <i class="fa fa-edit"></i>
@@ -62,7 +62,7 @@
                         </div>
                     </li>
                     <li>
-                        <span class="text"><a href="#pelajaran-student">Menu Sehat Buka Puasa</a></span>
+                        <span class="text"><a href="<?php echo base_url('pelajaran') ?>">Menu Sehat Buka Puasa</a></span>
                         <!-- General tools such as edit or delete-->
                         <div class="tools">
                             <i class="fa fa-edit"></i>
