@@ -40,7 +40,7 @@ class Chapter extends CI_Model
     function get_chapter($where)
     {
         $query = $this->db->get_where('chapter', $where);
-        $row = $query->row();
+        $row = $query->result();
         return $row;
     }
 
