@@ -29,7 +29,7 @@
             <div class="box box-primary">
                 <div class="col-lg-12">
                     <p></p>
-                    <form action="<?php echo base_url('admin/insert_pelajaran'); ?>" method="post">
+                    <form action="<?php echo base_url('admin/insert_pelajaran'); ?>" method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="box-body pad">

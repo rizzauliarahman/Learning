@@ -52,11 +52,11 @@
                             <tr>
                                 <td><?php echo $data[$x]['Student_ID'] ?></td>
                                 <td><?php echo $data[$x]['Name'] ?></td>
-                                <td><?php echo $data[$x]['username'] ?></td>
+                                <td><?php echo $data[$x]['Username'] ?></td>
                                 <td>
                                     <?php
                                     function deleteini(){
-                                        $where = array('username' => $data[$x]['username']);
+                                        $where = array('username' => $data[$x]['Username']);
                                         $this->user->delete_user("student",$where);
                                     }
                                     ?>
