@@ -118,6 +118,7 @@ class Admin extends CI_Controller
         return $result;
     }
 
+
     function get_kategori_course($kategori_id)
     {
         $where_kategori = array('kategori_id' => $kategori_id);
@@ -133,56 +134,6 @@ class Admin extends CI_Controller
         }
 
         return course;
-    }
-
-    function insert_pelajaran()
-    {
-        if ($this->session->userdata('akun') != "admin") {
-            $dir = $this->session->userdata('id');
-        } else {
-            
-        }
-
-        $path = 'assets/files/' .
-
-        $config['upload_path'] = FCPATH . 'assets/files/';
-        $config['allowed_types'] = 'pdf|doc|docx';
-        $this->load->library('upload', $config);
-        $this->upload->initialize($config);
-
-        $data = array(
-            'Title' => $this->input->post('judul'),
-            'Price' => $this->input->post('harga'),
-            'Date_created' => date("Y-m-d"),
-            'Instructor_ID' => 1100000,
-            'Kategori_ID' => 2800000
-        );
-
-        $this->upload->do_upload('file');
-        echo $this->upload->display_errors();
-        $file = $this->upload->data();
-        $data_2 = array(
-            'Course_ID' => 2227777,
-            'Link' => $file['full_path']
-        );
-
-        foreach ($file as $item => $value) {
-            echo $item . ' : ' . $value . '<br>';
-        }
-
-        $result = $this->course->insert_course($data);
-        $result_2 = $this->chapter->insert_chapter($data_2);
-
-        /* if ($result && $result_2){
-             echo '<script language="javascript">alert("Artikel Berhasil Di Post")</script>';
-             echo '<script language="javascript">window.location =""'.base_url('admin') ; echo ' </script>';
-         }
-         else {
-             echo '<script language="javascript">alert("Error : Artikel Gagal Di Post")</script>';
-             echo '<script language="javascript">window.location =""'.base_url('admin') ; echo ' </script>';
-         }
-       */
-
     }
 
 }

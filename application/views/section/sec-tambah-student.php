@@ -29,7 +29,7 @@
             <div class="box box-primary">
                 <div class="col-lg-6">
                 <p></p>
-                <form action="<?php echo base_url('registrasi/reg_student_admin'); ?>" method="post">
+                <form action="<?php echo base_url('registrasi/regis'); ?>" method="post">
                     <div class="form-group has-feedback">
                         <input type="text" class="form-control" placeholder="Nama Lengkap" name="nama">
                         <span class="glyphicon glyphicon-edit form-control-feedback"></span>

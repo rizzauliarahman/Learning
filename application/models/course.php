@@ -69,4 +69,20 @@ class Course extends CI_Model
         return $result;
     }
 
+    function insert_student_course($data){
+        if ($this->db->insert('student_course', $data)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function insert_student_history($data){
+        if ($this->db->insert('student_history', $data)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
