@@ -210,7 +210,7 @@
                                 <div class="amount">
                                     <img width="40%" height="40%" src="<?php echo base_url('assets/ext/img/a3.png') ?>">
                                     <br>
-                                    Rana Rennes
+                                    Rana Renes
                                 </div>
                             </li>
                             <li class="features last btn btn-secondary btn-wide">Other info</li>

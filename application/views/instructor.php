@@ -50,6 +50,12 @@ $this->load->view('layout/sidebar-instructor');
                 ?>
             </div>
 
+            <div class="tab-pane" id="pelajaran-instructor">
+                <?php
+                $this->load->view('section/sec-pelajaran-instructor');
+                ?>
+            </div>
+
             <div class="tab-pane" id="account-settings">
                 <?php
                 $this->load->view('section/sec-account-settings');

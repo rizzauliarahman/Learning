@@ -40,9 +40,7 @@
                     <i class="fa fa-book"></i> <span>Pelajaran</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Data Pelajaran</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Data Task</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Data Jawaban</a></li>
+                    <li><a href="#pelajaran-instructor" data-toggle="tab"><i class="fa fa-circle-o"></i>Data Pelajaran</a></li>
                 </ul>
             </li>
             <li class="treeview">
